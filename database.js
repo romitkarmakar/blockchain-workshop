@@ -4,7 +4,7 @@ var db = level("blockdb");
 db.put(
   "1",
   JSON.stringify({
-    txs: "Fuck you",
+    txs: "Test block",
   }),
   (err) => (err ? console.error(err) : null)
 );

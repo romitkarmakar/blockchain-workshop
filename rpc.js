@@ -8,11 +8,7 @@ var getAddress = require("./address");
 var { addTx, getTxs } = require("./mempool");
 
 server.addHandler("addtx", function (req, res, next) {
-  res.write("test ran!");
   addTx(req.m);
-  // db.put("1", JSON.stringify(req.m), (err) =>
-  //   err ? console.error(err) : null
-  // );
   next(null, req.m);
 });
 
